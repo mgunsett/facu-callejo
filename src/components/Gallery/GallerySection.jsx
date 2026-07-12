@@ -67,11 +67,18 @@ function Lightbox({ photo, onClose, onPrev, onNext }) {
       </Box>
       {/* Close */}
       <Box
-        position="absolute" top={16} right={40}
+        position="absolute" top={{ base: 24, md: 16 }} right={{ base: 6, md: 40 }}
         cursor="pointer" opacity={0.5} transition="opacity 0.2s"
         onClick={onClose}
+        border="1px solid" borderColor="whiteAlpha.600" borderRadius="full"
+        w={{ base: '36px', md: '44px' }} h={{ base: '36px', md: '44px' }}
+        pt={'2px'}
+        _hover={{
+          opacity: 1,
+          borderColor: 'brand.rose',
+        }}
       >
-        <Text fontFamily="heading" fontSize="2xl" color="white" _hover={{ opacity: 1, color: 'brand.rose' }}>✕</Text>
+        <Text textAlign={'center'} fontFamily="heading" fontSize="2xl" color="white" _hover={{ opacity: 1, color: 'brand.rose' }}>✕</Text>
       </Box>
     </MotionBox>
   )

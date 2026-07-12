@@ -8,15 +8,17 @@ import polaco1 from '@assets/polaco1.webp'
 import argentina from '@assets/argentina.webp'
 import cusco from '@assets/escudo_cusco.webp'
 //Escudos trayectoria
-import escudoAtlParana from '@assets/escudos/escudo_atlparana.webp'
-import escudoNewells from '@assets/escudos/escudo_newells.webp'
-import escudoAlhali from '@assets/escudos/escudo_alhali.webp'
-import escudoCentralCordoba from '@assets/escudos/escudo_centralcordoba.webp'
-import escudoChaco from '@assets/escudos/escudo_chaco.webp'
-import escudoLigadequito from '@assets/escudos/escudo_ligadequito.webp'
-import escudoSanjose from '@assets/escudos/escudo_sanjose.webp'
-import escudoUcatolica from '@assets/escudos/escudo_ucatolica.webp'
+import escudoAllboys from '@assets/escudos/escudo_allboys.webp'
 import escudoAucas from '@assets/escudos/escudo_aucas.webp'
+import escudoCarabobo from '@assets/escudos/escudo_carabobo.webp'
+import escudoColon from '@assets/escudos/escudo_colon.webp'
+import escudoGimnasiaJujuy from '@assets/escudos/escudo_gimnasiajujuy.webp'
+import escudoLigaLoja from '@assets/escudos/escudo_ligaloja.webp'
+import escudoMacara from '@assets/escudos/escudo_macara.webp'
+import escudoPatronato from '@assets/escudos/escudo_patronato.webp'
+import escudoPotosi from '@assets/escudos/escudo_potosi.webp'
+import escudoSantamarina from '@assets/escudos/escudo_santamarina.png'
+import escudoTemperley from '@assets/escudos/escudo_temperley.webp'
 //Gallery
 import image1 from '@assets/gallery/image1.webp'
 import image2 from '@assets/gallery/image2.webp'
@@ -68,20 +70,20 @@ export const playerData = {
 
   stats: [
     { label: 'Velocidad',      value: 91 },
-    { label: 'Definición',     value: 88 },
-    { label: 'Regate',         value: 84 },
-    { label: 'Pases Completos',    value: 79 },
-    { label: 'Presión Alta',   value: 82 },
-    { label: 'Visión de Juego',value: 79 },
+    { label: 'Definición',     value: 94 },
+    { label: 'Regate',         value: 86 },
+    { label: 'Pases Completos',    value: 81 },
+    { label: 'Presión Alta',   value: 87 },
+    { label: 'Visión de Juego',value: 85 },
   ],
 
   seasonStats: [
-    { label: 'Partidos',    value: 16 },
-    { label: 'Goles',       value: 3 },
-    { label: 'Asistencias', value: 1  },
-    { label: 'Tiros al árco', value: 8  },
-    { label: 'Min / Part.', value: "1,022'" },
-    { label: 'Valoración', value: 7.4  },
+    { label: 'Partidos',    value: 52 },
+    { label: 'Goles',       value: 33 },
+    { label: 'Asistencias', value: 4  },
+    { label: 'Tiros al árco', value: 37 },
+    { label: 'Min / Part.', value: "2,531'" },
+    { label: 'Valoración', value: 9.1  },
 
   ],
 
@@ -92,79 +94,95 @@ export const playerData = {
       years:   '2025 — Actualidad',
       logo:    cusco,
       titles:  [],
-      info:    '',
-    },
-    {
-      name:    'Liga de Quito',
-      country: 'Ecuador',
-      years:   '2023 — 2025',
-      logo:    escudoLigadequito,
-      titles:  ['Serie A Ecuador 2023','Copa Sudamericana 2023', 'Serie A Ecuador 2024', 'Supercopa Ecuador 2024'],
-      info:    '',
-    },
-    {
-      name:    'Al-Hali Saudi',
-      country: 'Arabia Saudita',
-      years:   '2022',
-      logo:    escudoAlhali,
-      titles:  [],
-      info:    '',
-    },
-    {
-      name:    'Universidad Católica',
-      country: 'Ecuador',
-      years:   '2021 — 2022',
-      logo:    escudoUcatolica,
-      titles:  [],
-      info:    '11 ideal de la Serie A de Ecuador 2021',
+      info:    'Goleador de la Liga 1 Perú 2025 con 25 goles',
     },
     {
       name:    'S.D Aucas',
       country: 'Ecuador',
-      years:   '2020',
+      years:   '2024',
       logo:    escudoAucas,
       titles:  [],
       info:    '',
     },
     {
-      name:    'Central Córdoba',
-      country: 'Argentina',
-      years:   '2019',
-      logo:    escudoCentralCordoba,
+      name:    'Nacional Potosí',
+      country: 'Bolivia',
+      years:   '2024',
+      logo:    escudoPotosi,
       titles:  [],
       info:    '',
     },
     {
-      name:    'Newell\'s Old Boys',
+      name:    'Macará',
+      country: 'Ecuador',
+      years:   '2023',
+      logo:    escudoMacara,
+      titles:  ['Ascenso a Serie A Ecuador 2023'],
+      info:    'Goleador de la Serie B Ecuador 2023 con 18 goles',
+    },
+    {
+      name:    'Temperley',
       country: 'Argentina',
+      years:   '2021 — 2022',
+      logo:    escudoTemperley,
+      titles:  [],
+      info:    '',
+    },
+    {
+      name:    'All Boys',
+      country: 'Argentina',
+      years:   '2019 — 2020',
+      logo:    escudoAllboys,
+      titles:  [],
+      info:    '',
+    },
+    {
+      name:    'Gimnasia de Jujuy',
+      country: 'Argentina',
+      years:   '2014 / 2018 — 2019',
+      logo:    escudoGimnasiaJujuy,
+      titles:  [],
+      info:    '',
+    },
+    {
+      name:    'Carabobo FC',
+      country: 'Venezuela',
       years:   '2018',
-      logo:    escudoNewells,
+      logo:    escudoCarabobo,
       titles:  [],
       info:    '',
     },
     {
-      name:    'Chaco For Ever',
-      country: 'Argentina',
-      years:   '2013-2014 / 2017',
-      logo:    escudoChaco,
-      titles:  [],
-      info:    '',
-    },
-    {
-      name:    'San José',
+      name:    'Santamarina de Tandil',
       country: 'Argentina',
       years:   '2016 — 2017',
-      logo:    escudoSanjose,
+      logo:    escudoSantamarina,
       titles:  [],
-      info:    '',
+      info:    'Préstamo',
     },
     {
-      name:    'Atlético Paraná',
+      name:    'Patrónato',
       country: 'Argentina',
-      years:   '2011-2013 / 2015',
-      logo:    escudoAtlParana,
+      years:   '2016',
+      logo:    escudoPatronato,
       titles:  [],
-      info:    '',
+      info:    'Préstamo',
+    },
+    {
+      name:    'Liga de Loja',
+      country: 'Ecuador',
+      years:   '2015',
+      logo:    escudoLigaLoja,
+      titles:  [],
+      info:    'Préstamo',
+    },
+    {
+      name:    'Colón de Santa Fe',
+      country: 'Argentina',
+      years:   '2013 — 2017',
+      logo:    escudoColon,
+      titles:  [],
+      info:    'Debut profesional vs Arsenal de Sarandí 2013',
     },
   ],
 
